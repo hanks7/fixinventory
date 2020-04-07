@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/topbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ac_main_item_one"
+            android:background="@drawable/selectable_white_divider_background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <View
+                style="@style/dividing_line"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:text="固资盘点" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ac_main_item_two"
+            android:background="@drawable/selectable_white_divider_background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <View
+                style="@style/dividing_line"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:text="资产列表" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">固定资产系统</string>
+    <string name="confirm">确定</string>
+    <string name="primary_code">主码:</string>
+    <string name="second_code">次码:</string>
+    <string name="concatenated_code">组合码:</string>
+    <string name="MasterCode">主&#160;&#160;&#160;&#160;&#160;&#160;&#160;码&#160;&#160;:</string>
+    <string name="FixedInventory">固资盘点</string>
+    <string name="assets_list">资产列表</string>
+</resources>

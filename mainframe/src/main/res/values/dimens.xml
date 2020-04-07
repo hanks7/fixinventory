@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="frame_divider">1px</dimen>
+    <dimen name="frame_top_bar_height">45dp</dimen>
+    <dimen name="frame_alert_dialog_radius">11dp</dimen>
+
+</resources>

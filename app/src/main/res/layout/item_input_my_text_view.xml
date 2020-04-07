@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/item_input_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_large"
+        android:layout_marginRight="@dimen/default_margin_small"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/item_input_edt_content"
+        style="@style/TextView_16_wrap"
+        android:background="@null"
+        android:singleLine="true"
+        tools:text="Name"
+        android:textColor="@color/input_color" />
+
+
+</LinearLayout>

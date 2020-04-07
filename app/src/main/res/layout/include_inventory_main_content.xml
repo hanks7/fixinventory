@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/activity_fixed_off_inventory">
+
+
+    <com.easyway.fixinventory.view.BarCodeEditView
+        android:id="@+id/ac_inventory_edit_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:input_title="产品码   :   " />
+
+    <View
+        style="@style/dividing_line"
+        android:layout_height="12dp" />
+
+
+    <com.easyway.fixinventory.view.MyTextView
+        android:id="@+id/ac_inventory_edit_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:input_title="设备名称:" />
+
+
+    <com.easyway.fixinventory.view.MyTextView
+        android:id="@+id/ac_inventory_edt_device_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:input_title="设备编码:" />
+
+
+    <com.easyway.fixinventory.view.MyTextView
+        android:id="@+id/ac_inventory_edt_device_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:input_title="设备型号:" />
+
+    <View
+        style="@style/dividing_line"
+        android:layout_height="12dp"
+        android:layout_marginTop="12dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+
+            <com.easyway.fixinventory.view.MyTextView
+                android:id="@+id/ac_inventory_edt_depositary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:input_title="保管人:" />
+
+            <com.easyway.fixinventory.view.MyTextView
+                android:id="@+id/ac_inventory_edt_original_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:input_title="原值(元):" />
+        </TableRow>
+
+
+        <View
+            style="@style/dividing_line"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TableRow>
+
+            <com.easyway.fixinventory.view.MyTextView
+                android:id="@+id/ac_inventory_edt_use_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:input_title="使用科室:" />
+
+            <com.easyway.fixinventory.view.MyTextView
+                android:id="@+id/ac_inventory_edt_admin_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:input_title="管理部门:" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <com.easyway.fixinventory.view.MyTextView
+        android:id="@+id/ac_inventory_edt_use_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:input_title="使用日期:" />
+
+    <com.easyway.fixinventory.view.MyTextView
+        android:id="@+id/ac_inventory_edt_depreciation_years"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:input_title="折旧年限:" />
+
+    <com.easyway.fixinventory.view.MyTextView
+        android:id="@+id/ac_inventory_edt_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:input_title="单位:" />
+
+    <View
+        style="@style/dividing_line"
+        android:layout_height="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="状态 :" />
+
+    <com.hanks.frame.view.GridViewForScrollView
+        android:id="@+id/ac_inventory_gv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:divider="@color/white"
+        android:horizontalSpacing="6dp"
+        android:numColumns="3"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingBottom="10dp"
+        android:verticalSpacing="6dp" />
+
+    <View
+        style="@style/dividing_line"
+        android:layout_height="12dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否在原地点:" />
+
+        <RadioGroup
+            android:id="@+id/ac_inventory_rg_is_origin_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ac_inventory_rb_is_origin_place_true"
+                style="@style/button_tag_style"
+                android:checked="true"
+                android:text="是" />
+
+            <RadioButton
+                android:id="@+id/ac_inventory_rb_is_origin_place_false"
+                style="@style/button_tag_style"
+                android:text="否" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址:" />
+
+        <EditText
+            android:id="@+id/ac_inventory_edt_address"
+            style="@style/TextView_16_wrap"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+</merge>

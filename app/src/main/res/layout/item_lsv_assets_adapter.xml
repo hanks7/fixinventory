@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    android:padding="9dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/item_assets_ll_right"
+        android:text="设备名称:">
+
+        <TextView
+            android:id="@+id/item_assets_tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="设备名称:" />
+
+        <TextView
+            android:id="@+id/item_assets_tv_space_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_assets_tv_device_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            tools:text="规格型号:" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_assets_ll_right"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_assets_tv_inventory_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            tools:text="未盘点" />
+
+        <TextView
+            android:id="@+id/item_assets_tv_inventory_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            tools:text="未盘点" />
+    </LinearLayout>
+
+
+</RelativeLayout>

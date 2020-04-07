@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/item_input_tv_title"
+        style="@style/style_tv_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/default_margin_large"
+        android:layout_marginRight="@dimen/default_margin_small"
+        tools:text="TextView" />
+
+    <EditText
+        android:id="@+id/item_input_edt_content"
+        style="@style/style_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/item_input_tv_title"
+        android:layout_toStartOf="@+id/item_input_iv_close"
+        android:background="@null"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="@color/input_color"
+        android:textSize="@dimen/tv_content_size"
+        tools:text="Name" />
+
+    <ImageView
+        android:id="@+id/item_input_iv_close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:src="@mipmap/cp_ic_search_clear"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/item_input_button5"
+        style="@style/dividing_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

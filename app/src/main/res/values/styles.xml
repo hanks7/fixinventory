@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="HoujjTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="style_login_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">@dimen/default_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/darkgray</item>
+        <item name="android:textCursorDrawable">@drawable/curson</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="style_button" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">290dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/selector_state_press_shpae_color_primary_button
+        </item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!--文字标题样式-->
+    <style name="style_tv_title" parent="base_text_style">
+        <item name="android:textSize">@dimen/tv_title_size</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <!--文字内容样式-->
+    <style name="style_tv_content" parent="base_text_style">
+        <item name="android:textSize">@dimen/tv_content_size</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <!--文字标注样式-->
+    <style name="style_tv_tag" parent="style_tv_content">
+        <item name="android:textSize">@dimen/tv_tag_size</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+    <style name="style_slide_menu_relative_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <style name="commit_button_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:background">@drawable/selectable_background</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="button_tag_style">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <!--<item name="android:layout_gravity">center_vertical</item>-->
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:textColor">@drawable/selector_text_color</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="inventory_radio_group_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AnimationPreview2">
+        <item name="android:windowEnterAnimation">@anim/menu_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_fade_out</item>
+    </style>
+</resources>

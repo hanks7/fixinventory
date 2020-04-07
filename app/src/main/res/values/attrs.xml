@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="input_test_view">
+        <attr name="input_content" format="string" />
+        <attr name="input_title" format="string" />
+        <attr name="input_background" format="reference|color" />
+        <attr name="input_isGone" format="boolean" />
+        <attr name="input_title_size" format="dimension" />
+        <attr name="input_content_size" format="dimension" />
+        <attr name="input_type" format="integer" />
+    </declare-styleable>
+</resources>  

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="search_view">
+        <attr name="pop_text" format="string" />
+        <attr name="search_text" format="string" />
+        <attr name="is_has_back" format="boolean" />
+        <attr name="title" format="string" />
+        <attr name="bar_right_tv" format="string" />
+        <attr name="bar_left_tv" format="string" />
+        <attr name="right_iv" format="reference" />
+        <attr name="is_chengjin" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+</resources>
